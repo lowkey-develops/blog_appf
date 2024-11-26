@@ -1,0 +1,265 @@
+/* Navbar styles */
+nav {
+    background-color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  /* Logo on the left */
+  nav .logo {
+    color: #f0a500; /* You can change the color to any you like */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  
+  /* Links on the right */
+  nav .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav .nav-links a:hover {
+    background-color: #f0a500;
+    border-radius: 5px;
+  }
+  /* Make the navbar responsive */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav .nav-links {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    nav .nav-links a {
+      margin: 10px 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  
+  /* Create Post form styles */
+  .create-post {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-post h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .create-post form input[type="text"],
+  .create-post form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .create-post form input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  .create-post form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-post form button:hover {
+    background-color: #45a049;
+  }
+  @media (max-width: 768px) {
+    .post-card {
+      flex-direction: column;
+    }
+  
+    .post-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .post-content {
+      padding: 15px;
+    }
+  }
+/* Image Preview Styling */
+.image-preview {
+    width: 200px;   
+    height: 150px;  
+    object-fit: cover;  
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+
+/* All Posts Page Styles */
+.post-list {
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .post-list h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .post-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-image {
+    width: 200px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .post-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .post-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .post-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .post-actions a,
+  .post-actions button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .post-actions .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .post-actions .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .post-actions .delete-btn {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .post-actions .delete-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  
+  /* Edit Post styles */
+  .edit-post {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-post h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .edit-post form input[type="text"],
+  .edit-post form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .edit-post form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-post form button:hover {
+    background-color: #45a049;
+  }
+  
